@@ -1,0 +1,9 @@
+Import data command: mongoimport --db mongo-exercises --collection courses --drop --file exercise-data.json --jsonArray
+
+Exercise 1: Get all the published backend courses, 
+sort them by their name, pick only their name and author, 
+and display them.
+
+Exercise 2: Get all the published frontend and backend courses, 
+sort them by their price in descending order, pick only their name and author, 
+and display them.
