@@ -14,16 +14,13 @@ const courseSchema = new mongoose.Schema({
 
 const Course = mongoose.model('Course', courseSchema);
 
-async function createCourse() {
-    const course = new Course({
-        name: 'Express.js Course',
-        author: 'Ubaid',
-        tags: ['express', 'backend'],
-        isPublished: true
-    });
-
-    const result = await course.save();
+async function getCourse() {
+    const result = await Course.find({ author: 'Ubaid', isPublished: true })
+        .limit(10)
+        .limit(10)
+        .sort({ name: 1 })
+        .select({ name: 1, tags: 1 });
     console.log(result);
 }
 
-createCourse();
+getCourse();
