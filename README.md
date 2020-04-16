@@ -1,4 +1,6 @@
-## `CRUD Operations using Mongoose and MongoDB`
+In this project, I practiced CRUD operations using **[Mongoose](https://www.npmjs.com/package/mongoose)** and **[MongoDB](https://www.mongodb.com/)**.
+
+Here is the summary:
 
 - MongoDB is an open-source document database. It stores data in flexible, JSON-like documents.
 - In relational databases we have tables and rows, in MongoDB we have collections and documents. A document can contain sub-documents. 
@@ -38,7 +40,7 @@ const courseSchema = new mongoose.Schema({
 ```javascript
 const Course = mongoose.model("Course", courseSchema);
 ```
-## `CRUD Operations`
+# CRUD Operations
 ## Saving a document
 ```javascript
 let course = new Course({ name: "..." });
